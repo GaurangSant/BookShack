@@ -1,0 +1,64 @@
+img {
+    display: block;
+    margin-bottom: 0px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.container img {
+    display: block;
+    width: 100%;
+}
+
+.centered {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Times New Roman", Helvetica, sans-serif;
+    font-size: 60px;
+    color: black;
+}
+
+.button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    background-color: #a855f7;
+    font-size: x-large;
+    padding: 20px 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+a button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+a button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+a button:hover span {
+    padding-right: 25px;
+}
+
+a button:hover span:after {
+    opacity: 1;
+    right: 0;
+}

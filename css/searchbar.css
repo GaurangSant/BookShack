@@ -1,0 +1,39 @@
+.container {
+    text-align: center;
+    background-color: #e9d5ff;
+}
+
+.search {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#search {
+    width: 250px;
+    height: 30px;
+    border-radius: 4px;
+    outline: none;
+    border: 2px solid;
+    border-color: #a855f7;
+}
+
+#button {
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #a855f7;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: #7e22ce;
+    color: white;
+    transition: all 0.4s ease-out;
+}
+
+button a:link {
+    color: white;
+}
