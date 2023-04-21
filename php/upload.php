@@ -66,7 +66,7 @@
             echo "<div class='form'>
               <h3>Data Entered successfully.</h3><br/>
               </div>";
-            echo "<meta http-equiv='refresh' content='0; URL=http://localhost/BookShack/php/signin.php'>";
+            echo "<meta http-equiv='refresh' content='0; URL=../php/signin.php'>";
         } else {
             echo "<div class='form'>
               <h3>ERROR</h3><br/>

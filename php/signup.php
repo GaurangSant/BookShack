@@ -66,7 +66,7 @@
   ?>
   <div class="container">
     <div class="logo">
-      <img src="../images/image7.png" alt="logo" width="300px">
+      <img src="../images/image.png" alt="logo" width="300px">
     </div>
     <div class="top">
       Sign Up!
