@@ -17,34 +17,32 @@ if (isset($_SESSION['email'])) {
     <link rel="stylesheet" href="../css/cart.css">
     <title>Cart</title>
     <link rel="icon" type="image/x-icon" href="../images/image.png">
+    <link rel="stylesheet" href="../css/invoice.css">
 </head>
 
 <body>
     <?php include("../html/navbar.html"); ?>
-    <table class="table-content" id="cart_table">
-        <thead>
-            <tr>
-                <th>Book Name</th>
-                <th>Author</th>
-                <th>Price</th>
-            </tr>
-        </thead><br><br>
-        <tbody>
+    <div class="invoice">
+        <div class="bill">
+            <div class="head">
+                Purchase Details
+            </div>
             <?php
             if (isset($_SESSION['cart'])) {
                 foreach ($_SESSION['cart'] as $key => $value) {
                     $sr = $key + 1;
                     echo "
-                    <tr>
-                        <td>$value[bname]</td>
-                        <td>$value[aname]</td>
-                        <td>$value[price]</td>
-                    </tr>";
+                    <p>
+                        Book: <td>$value[bname]</td><br>
+                        Author: <td>$value[aname]</td><br>
+                        Price: ₹<td>$value[price]</td><br>
+                        Seller Id: <td>$value[id]</td>
+                    </p>";
                 }
             }
             ?>
-        </tbody>
-    </table>
+        </div>
+    </div>
     <footer>
         <?php include("../html/footer.html"); ?>
     </footer>

@@ -10,18 +10,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['add_to_cart'])) {
         if (isset($_SESSION['cart'])) {
             $myitems = array_column($_SESSION['cart'], 'id');
+            $sql = "SELECT aname FROM item WHERE id = '$_POST[uid]'";
+            $result = mysqli_query($con, $sql);
+            $data = mysqli_fetch_assoc($result);
             if (in_array($_POST['id'], $myitems)) {
                 echo "<script>alert('Item Alreadt Added');
                 window.location.href='../php/store.php';</script>";
             } else {
                 $count = count($_SESSION['cart']);
-                $_SESSION['cart'][$count] = array('id' => $_POST['id'], 'bname' => $_POST['bname'], 'aname' => $_POST['aname'], 'price' => $_POST['price']);
+                $_SESSION['cart'][$count] = array('id' => $_POST['id'], 'bname' => $_POST['bname'], 'aname' => $_POST['aname'], 'price' => $_POST['price'], 'id' => $data['id']);
                 print_r($_SESSION['cart']);
                 echo "<script>alert('Item Added');
                 window.location.href='../php/store.php';</script>";
             }
         } else {
-            $_SESSION['cart'][0] = array('id' => $_POST['id'], 'bname' => $_POST['bname'], 'aname' => $_POST['aname'], 'price' => $_POST['price']);
+            $_SESSION['cart'][0] = array('id' => $_POST['id'], 'bname' => $_POST['bname'], 'aname' => $_POST['aname'], 'price' => $_POST['price'], 'id' => $data['id']);
             print_r($_SESSION['cart']);
             echo "<script>alert('Item Added');
                 window.location.href='../php/store.php';</script>";

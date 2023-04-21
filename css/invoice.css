@@ -1,0 +1,17 @@
+.invoice {
+    margin: 100px 0px;
+    text-align: center;
+}
+
+.invoice .bill{
+    margin: 0px 600px;
+    padding: 30px;
+    background-color: rgb(235, 192, 255);
+    border-radius: 10px;
+    
+}
+
+.head {
+    font-size: x-large;
+    font-weight: 600;
+}
