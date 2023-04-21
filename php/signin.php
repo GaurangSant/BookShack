@@ -65,7 +65,7 @@ if (isset($_REQUEST['email'])) {
   ?>
   <div class="container">
     <div class="logo">
-      <img src="../images/image1.png" alt="logo" width="300px">
+      <img src="../images/image.png" alt="logo" width="300px">
     </div>
     <div class="top">
       Sign In!
