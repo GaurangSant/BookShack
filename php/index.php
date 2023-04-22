@@ -16,7 +16,7 @@
         <div class="container">
             <?php include ("../html/navbar.html"); ?>
             <img src="../images/image1.jpg" alt="Books" width="1688" height="666">
-            <a href="./php/store.php"><button class="button"><span>Explore</span></button></a>
+            <a href="../php/store.php"><button class="button"><span>Explore</span></button></a>
             <div class="centered">
                 <b> BUY AND SELL YOUR BOOKS AT BEST PRICE </b>
             </div>

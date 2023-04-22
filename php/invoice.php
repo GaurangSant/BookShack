@@ -36,7 +36,6 @@ if (isset($_SESSION['email'])) {
                         Book: <td>$value[bname]</td><br>
                         Author: <td>$value[aname]</td><br>
                         Price: ₹<td>$value[price]</td><br>
-                        Seller Id: <td>$value[id]</td>
                     </p>";
                 }
             }
