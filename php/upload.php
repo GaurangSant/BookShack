@@ -17,7 +17,7 @@
 
     session_start();
     if (isset($_POST['submit'])) {
-        $target_dir = "images/";
+	define("IMAGE_URL","https://imageupload44.s3.ap-south-1.amazonaws.com/image/");
         $target_file = $target_dir . basename($_FILES["image"]["name"]);
         $uploadOk = 1;
         $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
@@ -66,12 +66,12 @@
             echo "<div class='form'>
               <h3>Data Entered successfully.</h3><br/>
               </div>";
-            echo "<meta http-equiv='refresh' content='0; URL=../php/signin.php'>";
+            echo "<meta http-equiv='refresh' content='0; URL=../php/store.php'>";
         } else {
             echo "<div class='form'>
               <h3>ERROR</h3><br/>
               </div>";
-            header("Location: ../php/index.php");
+            header("Location: ../php/upload.php");
         }
     }
 

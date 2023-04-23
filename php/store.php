@@ -28,7 +28,7 @@
       ?>
           <form action="../php/add_to_cart.php" method="POST">
             <div class="card">
-              <input type="hidden" id="image" name="image" readonly /><img src="./<?php echo $data['image']; ?>"><br>
+              <input type="hidden" id="image" name="image" readonly /><img src="<?php echo $data['image'] ?>"><br>
               <input type="hidden" id="bname" name="bname" readonly /><?php echo $data['bname']; ?><br>
               <input type="hidden" id="aname" name="aname" readonly />Author: <?php echo $data['aname']; ?><br>
               <div class="price"><input type="hidden" id="price" name="price" readonly />Price: ₹<?php echo $data['price']; ?></div>

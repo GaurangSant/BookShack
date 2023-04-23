@@ -14,7 +14,7 @@
 
 <body>
     <?php include("../html/navbar.html");
-    include("searchbar.html"); ?>
+    include("../html/searchbar.html"); ?>
     <div class="table">
         <div class="grid">
 
